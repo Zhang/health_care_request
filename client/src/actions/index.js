@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Nice way to get to an MVP, while making it easy to later include a backend
 const jsonFromApi = {
   formName: 'pdf_1',
   formData: {
@@ -31,6 +32,8 @@ export const fetchFormData = () => {
 export const customHandleBlur = (value, id) => {
   const data = { id, value };
   return (dispatch) => {
+    // You might want to consider setting types as constants that can be referenced here and in the reducers
+    // Makes it easier to avoid typo-based mistakes
     dispatch({ type: 'SET_TEXT_INPUT_FIELD', data })
   }
 }

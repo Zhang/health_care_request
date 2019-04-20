@@ -37,6 +37,7 @@ class AddInputField extends Component {
 
   render() {
     const { showModal, top } = this.state;
+
     return (
       <>
         <button
@@ -53,7 +54,7 @@ class AddInputField extends Component {
                 name={position}
                 value={this.state[position]}
                 onChange={this.handleChange}
-              /> 
+              />
             </label>
           ))
         }

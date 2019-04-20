@@ -1,5 +1,6 @@
 import _get from 'lodash.get';
 
+// should state be defaulted as an array or obj? I suppose it doesn't matter too much
 const healthForm = (state = [], action) => {
   const { type, data } = action;
   switch (type) {

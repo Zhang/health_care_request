@@ -12,7 +12,6 @@ const pdfStyles = {
   margin: '0 auto',
 }
 
-
 class HealthForm extends Component {
   componentDidMount() {
     this.props.fetchFormData();
